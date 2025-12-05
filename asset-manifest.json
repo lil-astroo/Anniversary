@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/glulog/static/css/main.86c39d56.css",
+    "main.js": "/glulog/static/js/main.35b95ae6.js",
+    "static/media/bg.jpg": "/glulog/static/media/bg.a71897fdaf792e0c09f8.jpg",
+    "index.html": "/glulog/index.html",
+    "main.86c39d56.css.map": "/glulog/static/css/main.86c39d56.css.map",
+    "main.35b95ae6.js.map": "/glulog/static/js/main.35b95ae6.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.86c39d56.css",
+    "static/js/main.35b95ae6.js"
+  ]
+}
