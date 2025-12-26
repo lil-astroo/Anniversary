@@ -13,9 +13,9 @@ export default function Home() {
                 {/* <h2>7 Days Until Our Anniversary</h2> */}
                 <h2>Come back here when it's 25th of December</h2>
                 <div className='gift-grid'>
-                    <Gift link={null} title='Day 1' />
-                    <Gift disabled link='/lapd' title='Day 2' />
-                    <Gift disabled link='/timeline' title='Day 3' />
+                    <Gift opened link={null} title='Day 1' />
+                    <Gift opened link='/lapd' title='Day 2' />
+                    <Gift link='/timeline' title='Day 3' />
                     <Gift disabled title='Day 4' />
                     <Gift disabled title='Day 5' />
                     <Gift disabled title='Day 6' />

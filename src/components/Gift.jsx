@@ -2,7 +2,7 @@ import React, { useRef } from 'react'
 
 import '../assets/styles/Gift.css'
 
-export default function Gift({ title, link, disabled }) {
+export default function Gift({ title, link, disabled, opened }) {
 
     const boxDoorRef = useRef(null)
 
@@ -11,19 +11,13 @@ export default function Gift({ title, link, disabled }) {
             alert('You cannot open this gift yet! Come back later 🎁')
             return;
         };
+        if (opened) {
+            return;
+        }
 
         boxDoorRef.current.classList.add('open')
         setTimeout(() => {
-            if (link === null) {
-                alert('YOU GOT AN EDIT FOR DAY 1 🎉🎉✨✨')
-                const a = document.createElement("a");
-                a.href = "/img/edit.mp4";   // مسیر فایل
-                a.download = "edit.mp4";      // اسم فایل
-                a.click();
-            }
-            else {
-                window.location.href = link
-            }
+            window.location.href = `${process.env.PUBLIC_URL}${link}`;
         }, 2000)
         // alert('هنوز زوده بچه 25 دسامبر اینجا باش!')
     }

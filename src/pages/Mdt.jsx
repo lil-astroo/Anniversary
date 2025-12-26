@@ -1,6 +1,5 @@
 import { useState, useEffect } from "react";
 import CaseFile from "../components/CaseFile";
-import Notes from "../components/Notes";
 import '../assets/styles/Mdt.css'
 
 export default function Mdt() {
@@ -177,8 +176,6 @@ only as intent.
                         >
                             ✕
                         </button>
-
-                        <Notes />
                     </div>
                 </div>
             )}
