@@ -1,10 +1,13 @@
 import React, { useRef } from 'react'
+import { useNavigate } from 'react-router-dom'
 
 import '../assets/styles/Gift.css'
 
 export default function Gift({ title, link, disabled, opened }) {
 
     const boxDoorRef = useRef(null)
+
+    const navigate = useNavigate()
 
     const giftOpeningHandler = () => {
         if (disabled) {
@@ -17,7 +20,7 @@ export default function Gift({ title, link, disabled, opened }) {
 
         boxDoorRef.current.classList.add('open')
         setTimeout(() => {
-            window.location.href = `${process.env.PUBLIC_URL}${link}`;
+            navigate(link)
         }, 2000)
         // alert('هنوز زوده بچه 25 دسامبر اینجا باش!')
     }
