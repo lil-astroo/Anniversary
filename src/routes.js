@@ -4,7 +4,7 @@ import TimeLine from './pages/TimeLine'
 
 let routes = [
     { path: '/home', element: <Home /> },
-    { path: '/lapd', element: <Mdt /> },
+    { path: '/mdt', element: <Mdt /> },
     { path: '/timeline', element: <TimeLine /> },
     { path: '/', element: <Home /> },
     { path: '*', element: <Home /> },

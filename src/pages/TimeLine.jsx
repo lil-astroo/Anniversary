@@ -5,7 +5,7 @@ import { loadSlim } from "@tsparticles/slim";
 import img2 from '../assets/img/date.jpg'
 import img1 from '../assets/img/drawing.jpg'
 
-import '../assets/styles/TimeLine.css';
+// import '../assets/styles/TimeLine.css';
 
 export default function TimeLine() {
 

@@ -15,8 +15,8 @@ export default function Home() {
                 <div className='gift-grid'>
                     <Gift opened link={null} title='Day 1' />
                     <Gift opened link='/lapd' title='Day 2' />
-                    <Gift link='/timeline' title='Day 3' />
-                    <Gift disabled title='Day 4' />
+                    <Gift opened link='/timeline' title='Day 3' />
+                    <Gift link='/mdt' title='Day 4' />
                     <Gift disabled title='Day 5' />
                     <Gift disabled title='Day 6' />
                     <Gift disabled title='Day 7' />
