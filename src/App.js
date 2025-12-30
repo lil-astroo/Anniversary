@@ -4,6 +4,9 @@ import Particles, { initParticlesEngine } from "@tsparticles/react";
 import { loadSlim } from "@tsparticles/slim";
 import routes from './routes'
 
+import particle1 from './assets/heart.png'
+import particle2 from './assets/fireheart.png'
+
 import audioSrc from './assets/jingle.mp3';
 
 import './App.css'
@@ -53,8 +56,8 @@ export default function App() {
                 type: "image",
                 options: {
                     image: [
-                        { src: '/img/heart.png'},
-                        { src: '/img/fireheart.png'},
+                        { src: particle1},
+                        { src: particle2},
                     ]
                 }
             },
