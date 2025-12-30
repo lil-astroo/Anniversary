@@ -22,7 +22,7 @@ export default function Gift({ title, link, disabled, opened }) {
         boxDoorRef.current.classList.add('open')
         setTimeout(() => {
             const a = document.createElement("a");
-            a.href = {anniversary;
+            a.href = anniversary;
             a.download = "anniversary.mp4";
             a.click();
         }, 2000)
