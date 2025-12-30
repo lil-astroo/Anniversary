@@ -53,8 +53,8 @@ export default function App() {
                 type: "image",
                 options: {
                     image: [
-                        { src: 'anniversary/img/heart.png'},
-                        { src: 'anniversary/img/fireheart.png'},
+                        { src: '%PUBLIC_URL%/anniversary/img/heart.png'},
+                        { src: '%PUBLIC_URL%/anniversary/img/fireheart.png'},
                     ]
                 }
             },

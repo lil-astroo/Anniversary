@@ -3,10 +3,6 @@ import Gift from '../components/Gift'
 
 export default function Home() {
 
-    const handleClose = () => {
-        document.querySelector('.popup-wrapper').style.display = 'none'
-    }
-
     return (
         <div className="overlay">
             <div className='app'>
