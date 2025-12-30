@@ -10,24 +10,17 @@ export default function Home() {
     return (
         <div className="overlay">
             <div className='app'>
-                {/* <h2>7 Days Until Our Anniversary</h2> */}
-                <h2>Come back here when it's 25th of December</h2>
+                <h2>THE LAST DAY</h2>
                 <div className='gift-grid'>
-                    <Gift opened link={null} title='Day 1' />
-                    <Gift opened link='/lapd' title='Day 2' />
-                    <Gift opened link='/timeline' title='Day 3' />
-                    <Gift link='/mdt' title='Day 4' />
-                    <Gift disabled title='Day 5' />
-                    <Gift disabled title='Day 6' />
-                    <Gift disabled title='Day 7' />
+                    <Gift title='Day 7' />
                 </div>
             </div>
-            <div className='popup-wrapper'>
+            {/* <div className='popup-wrapper'>
                 <div className='popup'>
                     <p>روی هر جعبه کلیک کن تا هدیه اون روز رو بگیری🥳</p>
                     <button onClick={handleClose}>close</button>
                 </div>
-            </div>
+            </div> */}
         </div>
     )
 }

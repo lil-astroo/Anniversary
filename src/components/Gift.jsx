@@ -1,5 +1,6 @@
 import React, { useRef } from 'react'
 import { useNavigate } from 'react-router-dom'
+import anniversary from '../assets/img/anniversary.mp4'
 
 import '../assets/styles/Gift.css'
 
@@ -20,7 +21,10 @@ export default function Gift({ title, link, disabled, opened }) {
 
         boxDoorRef.current.classList.add('open')
         setTimeout(() => {
-            navigate(link)
+            const a = document.createElement("a");
+            a.href = {anniversary};
+            a.download = "anniversary.mp4";
+            a.click();
         }, 2000)
         // alert('هنوز زوده بچه 25 دسامبر اینجا باش!')
     }

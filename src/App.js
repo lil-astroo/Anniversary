@@ -43,30 +43,32 @@ export default function App() {
         fpsLimit: 60,
         particles: {
             number: {
-                value: 300,
+                value: 120, // با عکس کمتر بهتره
                 density: {
                     enable: true,
                     area: 800,
                 },
             },
-            color: {
-                value: "#ffffff",
-            },
             shape: {
-                type: "circle",
+                type: "image",
+                options: {
+                    image: [
+                        { src: 'anniversary/img/heart.png'},
+                        { src: 'anniversary/img/fireheart.png'},
+                    ]
+                }
             },
             opacity: {
-                value: { min: 0.4, max: 0.8 },
+                value: { min: 0.6, max: 1 },
             },
             size: {
-                size: { value: { min: 2, max: 5 } },
+                value: { min: 5, max: 15 },
                 random: true,
             },
             move: {
                 enable: true,
                 direction: "bottom",
                 speed: { min: 0.5, max: 2 },
-                straight: false,
                 outModes: {
                     default: "out",
                 },
@@ -79,18 +81,12 @@ export default function App() {
         },
         interactivity: {
             events: {
-                onHover: {
-                    enable: false,
-                },
-                onClick: {
-                    enable: false,
-                },
+                onHover: { enable: false },
+                onClick: { enable: false },
             },
         },
         detectRetina: true,
     }), []);
-
-
 
     return (
         <React.Fragment>
