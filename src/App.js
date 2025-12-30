@@ -4,8 +4,8 @@ import Particles, { initParticlesEngine } from "@tsparticles/react";
 import { loadSlim } from "@tsparticles/slim";
 import routes from './routes'
 
-import particle1 from './assets/heart.png'
-import particle2 from './assets/fireheart.png'
+import particle1 from './assets/img/heart.png'
+import particle2 from './assets/img/fireheart.png'
 
 import audioSrc from './assets/jingle.mp3';
 
